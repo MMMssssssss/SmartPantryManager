@@ -53,11 +53,11 @@
         android:layout_marginEnd="137dp"
         android:layout_marginBottom="180dp"
         android:scaleType="fitCenter"
+        android:src="@drawable/woodenutensils_resized"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/woodenutensils" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextTextMultiLine"
