@@ -5,15 +5,78 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/Bisque"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/smart_pantry_manager"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="762dp"
+        android:fontFamily="monospace"
+        android:text="Smart Pantry Manager"
+        android:textAlignment="center"
+        android:textColor="@color/Black"
+        android:textSize="28sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/get_started"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="694dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="125dp"
+        android:fontFamily="monospace"
+        android:text="Get Started"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/pantryImage"
+        android:layout_width="260dp"
+        android:layout_height="350dp"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="344dp"
+        android:layout_marginEnd="137dp"
+        android:layout_marginBottom="180dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/woodenutensils" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="144dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="580dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="Use ingredients in your pantry and discover recipes you can make today."
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
