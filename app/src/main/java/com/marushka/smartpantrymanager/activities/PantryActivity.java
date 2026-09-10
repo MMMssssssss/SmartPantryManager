@@ -1,13 +1,17 @@
 package com.marushka.smartpantrymanager.activities;
 
+
 import android.os.Bundle;
 
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import com.marushka.smartpantrymanager.AddIngredientActivity;
 import com.marushka.smartpantrymanager.R;
 import com.marushka.smartpantrymanager.SettingsActivity;
 import com.marushka.smartpantrymanager.SuggestedRecipesActivity;
@@ -16,6 +20,10 @@ public class PantryActivity extends AppCompatActivity {
 
     BottomNavigationView  bottomNavigationView;
 
+    FloatingActionButton addIngredientButton;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -23,6 +31,9 @@ public class PantryActivity extends AppCompatActivity {
 
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         bottomNavigationView.setSelectedItemId(R.id.nav_pantry);
+        addIngredientButton = findViewById(R.id.addIngredientButton);
+
+
 
         bottomNavigationView.setOnItemSelectedListener(item -> {
             if (item.getItemId() == R.id.nav_recipe){
@@ -40,6 +51,12 @@ public class PantryActivity extends AppCompatActivity {
 
             return false;
         });
+
+        addIngredientButton.setOnClickListener(v -> {
+            Intent intent = new Intent(PantryActivity.this, AddIngredientActivity.class);
+            startActivity(intent);
+        });
+
 
 
     }
